@@ -4,20 +4,20 @@ function Work() {
   const imgs = [
     {
       url: "https://assets-global.website-files.com/6334198f239547f2fccd84c1/650c5f12d26da475b2fd6b88_15-p-500.webp",
-      top: 8,
-      left: 0,
+      top: 0,
+      left: 10,
       isActive: false,
     },
     {
       url: "https://assets-global.website-files.com/6334198f239547f2fccd84c1/65b413200259aa2289224594_Frame%204.png",
       top: 32,
-      left: -130,
+      left: -110,
       isActive: false,
     },
     {
       url: "https://assets-global.website-files.com/6334198f239547f2fccd84c1/65b415e16156819899272250_Frame%202.png",
       top: 42,
-      left: 150,
+      left: 110,
       isActive: false,
     },
   ];
@@ -33,7 +33,7 @@ function Work() {
             key={index}
             src={elem.url}
             alt="imgs"
-            className={`absolute inset-0 object-cover rounded-xl ${index === 0 ? 'z-0' : 'z-20'}`}
+            className={`absolute inset-0 object-cover rounded-xl hidden md:block ${index === 0 ? 'z-0' : 'z-20'}`}
             style={{ top: `${elem.top}%`, left: `${elem.left}%` }}
           />
         ))}
