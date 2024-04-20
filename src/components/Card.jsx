@@ -5,7 +5,7 @@ import { FaArrowRight } from "react-icons/fa6";
 function Card({ width, height, color, hovering }) {
   return (
     <div
-      className={`${width} md:w-auto h-${height} md:h-auto hover:bg-violet-600 transition-all ease-in-out rounded-xl p-4 ${color}  `}>
+      className={`${width} md:w-full h-${height} md:h-full w-full h- md:bg-slate-800 hover:bg-violet-600 transition-all ease-in-out rounded-xl p-4 ${color}  `}>
       <div className="hover:ml-2 flex flex-col justify-between h-full transition-all ease-in-out ">
         <div className="flex flex-col">
           <p className="flex items-center justify-between text-sm md:text-base">

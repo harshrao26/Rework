@@ -9,7 +9,7 @@ import MovingSrips from './components/MovingStrips'
 import './App.css'
 function App() {
   return (
-    <div className='font-[Poppins] tracking-tighter bg-zinc-900 text-white'>
+    <div className='font-[Poppins] tracking-tighter overflow-hidden bg-zinc-900 text-white'>
       <Nav />
       <Work />
       <Strips />
