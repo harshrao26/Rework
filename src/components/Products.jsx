@@ -1,6 +1,6 @@
 import React from "react";
 import ProductStrips from "./ProductsStrip";
-import Button from "./Button";
+
 function Products() {
   const ProductStripsInfo = [
     {
@@ -22,22 +22,18 @@ function Products() {
       url: "https://assets-global.website-files.com/6334198f239547f2fccd84c1/650c5f12d26da475b2fd6b88_15-p-500.webp",
     },
   ];
+  
   return (
-    <div>
-      <div>
-        {ProductStripsInfo.map((elem, index) => {
-          return (
-            <div>
-              <ProductStrips
-                title={elem.title}
-                content={elem.content}
-                url={elem.url}
-                showBtn={elem.title === "Cars" || elem.title === "Phones"}
-              />
-            </div>
-          );
-        })}
-      </div>
+    <div className="flex flex-col items-stretch justify-center">
+      {ProductStripsInfo.map((elem, index) => (
+        <ProductStrips
+          key={index}
+          title={elem.title}
+          content={elem.content}
+          url={elem.url}
+          showBtn={elem.title === "Cars" || elem.title === "Phones"}
+        />
+      ))}
     </div>
   );
 }
