@@ -1,4 +1,4 @@
-# Product Showcase App
+# [Product Showcase App](https://rework-puce.vercel.app/)
 
 This is a simple **React application** of a Landing Page.
 
@@ -7,7 +7,7 @@ This is a simple **React application** of a Landing Page.
 1. **Clone the repository** to your local machine:
 
     ```bash
-    git clone [https://github.com/harshrao26/Rework.git](https://github.com/harshrao26/Rework.git)
+    git clone (https://github.com/harshrao26/Rework.git)
     ```
 
 2. **Navigate to the project directory**:
